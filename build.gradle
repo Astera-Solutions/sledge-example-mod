@@ -1,0 +1,37 @@
+plugins {
+    id 'java'
+    id 'maven-publish'
+}
+
+group = 'com.example'
+version = '1.0.0'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+    maven { url 'https://libraries.minecraft.net' }
+    maven { url 'https://maven.fabricmc.net/' }
+    maven { url 'https://repo.spongepowered.org/maven/' }
+}
+
+dependencies {
+    compileOnly 'com.github.Astera-Solutions:Sledge-API:v1.0.0'
+    compileOnly 'com.github.Astera-Solutions:SledgeMC-Loader:1.21.4'
+    
+    // API is included in src/main/java for standalone build (Removed in transition)
+    compileOnly "net.fabricmc:sponge-mixin:0.15.3+mixin.0.8.7"
+    
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+jar {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
+test { useJUnitPlatform() }
