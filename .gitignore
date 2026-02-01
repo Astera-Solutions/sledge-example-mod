@@ -41,3 +41,7 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+.gradle/buildOutputCleanup/buildOutputCleanup.lock
+.gradle/9.0.0/fileHashes/fileHashes.lock
+.gradle/9.0.0/fileHashes/fileHashes.bin
+*.lock

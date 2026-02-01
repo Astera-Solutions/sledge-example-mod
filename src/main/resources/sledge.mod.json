@@ -23,7 +23,7 @@
     },
     "dependencies": {
         "sledgemc": ">=1.0.0",
-        "minecraft": "1.21.4"
+        "minecraft": "1.21.11"
     },
     "env": "*"
 }
