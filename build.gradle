@@ -21,7 +21,7 @@ repositories {
 
 dependencies {
     compileOnly 'com.github.Astera-Solutions:Sledge-API:v1.0.0'
-    compileOnly 'com.github.Astera-Solutions:SledgeMC-Loader:1.21.4'
+    compileOnly 'com.github.Astera-Solutions:SledgeMC-Loader:1.21.8'
     
     // API is included in src/main/java for standalone build (Removed in transition)
     compileOnly "net.fabricmc:sponge-mixin:0.15.3+mixin.0.8.7"
