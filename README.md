@@ -1,4 +1,4 @@
-# Example Mod (1.21.11)
+# Example Mod (1.21.8)
 
 The **Reference Implementation** for SledgeMC on Minecraft **1.21.8**.
 
