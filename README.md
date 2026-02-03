@@ -1,22 +1,22 @@
-# Sledge Loader
+# 📦 Example Mod (1.21.11)
 
-The **Core Engine** of SledgeMC for Minecraft
+The **Reference Implementation** for SledgeMC on Minecraft **1.21.11**.
 
-This version of **Sledge Loader** is specifically built and optimized for Minecraft
+This mod serves as a template and guide for developers to build their own mods using SledgeMC.
 
-## Role
-- Discovers and loads mods from the `mods/` folder.
-- Manages dependencies and conflict detection.
-- Handles bytecode transformation and runtime remapping.
+## 🏗️ Role
+- Demonstrates mod initialization and lifecycle hooks.
+- Shows how to use the SledgeMC Event Bus.
+- Provides examples of SpongePowered Mixins for Minecraft 1.21.11.
 
-## Features
-- **Version Specific**: Hardcoded to target and support Minecraft.
-- **Runtime Mapping Service**: Automatically downloads and applies Intermediary mappings.
-- **Mixin Integration**: Bootstraps the SpongePowered Mixin framework.
-- **Mod Discovery**: Scans and validates `sledge.mod.json` metadata.
+## ✨ Features
+- **Version Specific**: Configured to target Minecraft 1.21.11 in `sledge.mod.json`.
+- **Runtime Mixins**: Demonstrates targeting Minecraft classes searching for Intermediary names.
+- **Maven Integration**: Includes a pre-configured `build.gradle` for easy development.
 
-## Build
-To build the Loader jar:
+## 🛠️ Build
+To build the mod jar:
 ```bash
 ./gradlew clean build
 ```
+The artifact will be located in `build/libs/example-mod-1.0.0.jar`.

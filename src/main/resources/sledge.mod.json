@@ -1,0 +1,29 @@
+{
+    "modId": "example-mod",
+    "version": "1.0.0",
+    "info": {
+        "name": "Example Mod",
+        "description": "SledgeMC ModLoader için yeni nesil örnek mod şablonu",
+        "contributors": [
+            "YourName"
+        ]
+    },
+    "loaders": {
+        "common": [
+            "com.example.ExampleMod"
+        ],
+        "client": [
+            "com.example.ExampleClientMod"
+        ]
+    },
+    "transformers": {
+        "injecta": [
+            "com.example.mixin.ExampleMixin"
+        ]
+    },
+    "dependencies": {
+        "sledgemc": ">=1.0.0",
+        "minecraft": "1.21.11"
+    },
+    "env": "*"
+}
