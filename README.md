@@ -1,23 +1,23 @@
-# Example Mod (1.21.8)
+# ⚙️ Sledge Loader (1.21.8)
 
-The **Reference Implementation** for SledgeMC on Minecraft **1.21.8**.
+The **Core Engine** of SledgeMC for Minecraft **1.21.8**.
 
-This mod serves as a template and guide for developers to build their own mods using SledgeMC.
+This version of **Sledge Loader** is specifically built and optimized for Minecraft 1.21.8.
 
-## Role
-- Demonstrates mod initialization and lifecycle hooks.
-- Shows how to use the SledgeMC Event Bus.
-- Provides examples of SpongePowered Mixins for Minecraft 1.21.8.
+## 🏗️ Role
+- Discovers and loads mods from the `mods/` folder.
+- Manages dependencies and conflict detection.
+- Handles bytecode transformation and runtime remapping.
 
-## Features
-- **Version Specific**: Configured to target Minecraft 1.21.8 in `sledge.mod.json`.
-- **Runtime Mixins**: Demonstrates targeting Minecraft classes searching for Intermediary names.
-- **Maven Integration**: Includes a pre-configured `build.gradle` for easy development.
-- **Mappings**: We're using Mojmaps right now but we can make our own mappings later.
+## ✨ Features
+- **Version Specific**: Hardcoded to target and support MC 1.21.8.
+- **Runtime Mapping Service**: Automatically downloads and applies Intermediary mappings.
+- **Mixin Integration**: Bootstraps the SpongePowered Mixin framework.
+- **Mod Discovery**: Scans and validates `sledge.mod.json` metadata.
 
-## Build
-To build the mod jar:
+## 🛠️ Build
+To build the Loader jar:
 ```bash
 ./gradlew clean build
 ```
-**Note:** *All the details are explained in the comment notes within the classes.*
+The shadow (all-in-one) artifact will be located in `build/libs/sledge-loader-1.21.8-all.jar`.
